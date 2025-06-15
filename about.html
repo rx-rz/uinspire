@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Me - Adeleye Abdulrazaq Temiloluwa</title>
+    <link rel="stylesheet" href="about.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="nav-brand">
+        <h1>Adeleye Abdulrazaq Temiloluwa</h1>
+      </div>
+      <ul class="nav-menu">
+       <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About me</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="login.html">Login</a></li>
+      </ul>
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+
+    <main class="about-page">
+      <div class="about-content">
+        <section class="profile-section">
+          <h2 class="section-title">Profile</h2>
+          <div class="profile-text">
+            <p>
+              I'm Temiloluwa Adeleye, a versatile full-stack developer with a
+              solid foundation in both frontend and backend technologies. Over
+              the past 5 years, I've had the opportunity to work across various
+              industries, from healthcare to fintech, where I've consistently
+              delivered robust, user-friendly applications that meet a wide
+              range of needs.
+            </p>
+            <p>
+              I'm passionate about creating solutions that not only function
+              well but also provide a great user experience.
+            </p>
+          </div>
+        </section>
+
+        <section class="experience-section">
+          <h2 class="section-title">Professional Experience</h2>
+
+          <div class="experience-item">
+            <div class="experience-header">
+              <div class="experience-meta">
+                <span class="date">2023/11 – 2024/07</span>
+              </div>
+              <div class="experience-role">
+                <h3>Backend Engineer Intern</h3>
+                <p class="company">Mayo Clinic</p>
+              </div>
+            </div>
+            <ul class="experience-details">
+              <li>
+                Created backend endpoints to manage operating room activities
+                and surgeon profiles.
+              </li>
+              <li>
+                Successfully integrated the Qualtrics XM platform into the
+                backend, allowing for real-time collection of survey data on
+                surgeons, supporting informed decision-making and ongoing
+                performance evaluation.
+              </li>
+            </ul>
+          </div>
+
+          <div class="experience-item">
+            <div class="experience-header">
+              <div class="experience-meta">
+                <span class="date">2024/01 – 2024/03</span>
+              </div>
+              <div class="experience-role">
+                <h3>Frontend Engineer (Contract)</h3>
+                <p class="company">Javaplus Innovations</p>
+              </div>
+            </div>
+            <ul class="experience-details">
+              <li>
+                Revamped multiple ongoing web application projects using NextJS.
+              </li>
+            </ul>
+          </div>
+
+          <div class="experience-item">
+            <div class="experience-header">
+              <div class="experience-meta">
+                <span class="date">2023/05 – 2024/02</span>
+              </div>
+              <div class="experience-role">
+                <h3>Frontend Engineer (Contract)</h3>
+                <p class="company">A-flow Technologies</p>
+              </div>
+            </div>
+            <ul class="experience-details">
+              <li>
+                Developed easy-to-use P2P Fintech client and admin apps with
+                ReactJS, making the platform straightforward for both users and
+                administrators to navigate.
+              </li>
+              <li>
+                Implemented secure login systems and integrated data retrieval
+                and processing features to keep the platform running smoothly.
+              </li>
+            </ul>
+          </div>
+
+          <div class="experience-item">
+            <div class="experience-header">
+              <div class="experience-meta">
+                <span class="date">2020 – 2022</span>
+              </div>
+              <div class="experience-role">
+                <h3>Fullstack Developer</h3>
+                <p class="company">CodeLearnersHub</p>
+              </div>
+            </div>
+            <ul class="experience-details">
+              <li>
+                Conducted interactive workshops to introduce new students to
+                fundamental concepts of web development.
+              </li>
+              <li>
+                Collaborated with other employees on various large-scale
+                projects, contributing to development and implementation.
+              </li>
+            </ul>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <script>
+      const hamburger = document.querySelector(".hamburger");
+      const navMenu = document.querySelector(".nav-menu");
+
+      hamburger.addEventListener("click", () => {
+        hamburger.classList.toggle("active");
+        navMenu.classList.toggle("active");
+      });
+
+      document.querySelectorAll(".nav-menu a").forEach((link) => {
+        link.addEventListener("click", () => {
+          hamburger.classList.remove("active");
+          navMenu.classList.remove("active");
+        });
+      });
+    </script>
+  </body>
+</html>

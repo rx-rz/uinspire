@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projects - Adeleye Abdulrazaq Temiloluwa</title>
+    <link rel="stylesheet" href="projects.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="nav-brand">
+        <h1>Adeleye Abdulrazaq Temiloluwa</h1>
+      </div>
+      <ul class="nav-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About me</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="projects.html" class="active">Projects</a></li>
+        <li><a href="login.html">Login</a></li>
+      </ul>
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+
+    <main class="projects-page">
+      <div class="projects-content">
+        <h2 class="section-title">My Projects</h2>
+        <div class="project-grid">
+          <div class="project-card">
+            <img src="nbra-b.png" alt="RB Blog screenshot" />
+            <h3>RB Blog</h3>
+            <p>A blog for a Substack author</p>
+            <a href="https://nbra-b.vercel.app/" target="_blank">Visit</a>
+          </div>
+
+          <div class="project-card">
+            <img src="misc-avatars.png" alt="MiscAvatars screenshot" />
+            <h3>MiscAvatars</h3>
+            <p>A simple ecommerce website for buying UI avatars</p>
+            <a href="https://miscavatars.vercel.app/" target="_blank">Visit</a>
+          </div>
+
+          <div class="project-card">
+            <img src="my-nites.png" alt="My Nites screenshot" />
+            <h3>My Nites</h3>
+            <p>An Airbnb reservation website</p>
+            <a href="https://seven-eleven-nu.vercel.app/" target="_blank"
+              >Visit</a
+            >
+          </div>
+
+          <div class="project-card">
+            <img src="vuong.png" alt="Ocean Vuong quotes screenshot" />
+            <h3>Ocean Vuong Quotes</h3>
+            <p>A website containing quotes by Ocean Vuong</p>
+            <a href="https://ocean-vuong.vercel.app/" target="_blank">Visit</a>
+          </div>
+
+          <div class="project-card">
+            <img src="cgpa.png" alt="CGPA Calculator screenshot" />
+            <h3>CGPA Calculator</h3>
+            <p>A simple CGPA calculator</p>
+            <a href="https://cgpa-calc.vercel.app/" target="_blank">Visit</a>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script>
+      const hamburger = document.querySelector(".hamburger");
+      const navMenu = document.querySelector(".nav-menu");
+
+      hamburger.addEventListener("click", () => {
+        hamburger.classList.toggle("active");
+        navMenu.classList.toggle("active");
+      });
+
+      document.querySelectorAll(".nav-menu a").forEach((link) => {
+        link.addEventListener("click", () => {
+          hamburger.classList.remove("active");
+          navMenu.classList.remove("active");
+        });
+      });
+    </script>
+  </body>
+</html>

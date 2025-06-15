@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Abdulrazaq Adeleye - Web Engineer</title>
+    <link
+      href="https://api.fontshare.com/v2/css?f[]=plus-jakarta-sans@200,300,400,500,600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="nav-brand">
+        <h1>Adeleye Abdulrazaq Temiloluwa</h1>
+      </div>
+      <ul class="nav-menu">
+       <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About me</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="login.html">Login</a></li>
+      </ul>
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+
+    <main class="hero">
+      <div class="hero-content">
+        <h2 class="hero-title">
+          Web<br />
+          Engineer
+        </h2>
+        <div class="hero-bottom">
+          <p class="hero-description">
+            I am a student of the Department of Information Technology,
+            UNILORIN. I am also a fullstack web engineer- working across
+            frontend and backend applications for the past five years.
+          </p>
+          <button class="cta-button" onclick="window.location.href='projects.html'">View Projects</button>
+        </div>
+      </div>
+
+    </main>
+
+    <script>
+      // Mobile menu toggle
+      const hamburger = document.querySelector(".hamburger");
+      const navMenu = document.querySelector(".nav-menu");
+
+      hamburger.addEventListener("click", () => {
+        hamburger.classList.toggle("active");
+        navMenu.classList.toggle("active");
+      });
+
+      document.querySelectorAll(".nav-menu a").forEach((link) => {
+        link.addEventListener("click", () => {
+          hamburger.classList.remove("active");
+          navMenu.classList.remove("active");
+        });
+      });
+    </script>
+  </body>
+</html>

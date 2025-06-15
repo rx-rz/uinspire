@@ -1,0 +1,82 @@
+@import url("about.css");
+
+/* Overriding or adding styles specific to projects page */
+.projects-page {
+  min-height: 100vh;
+  padding: 6rem 2rem 4rem;
+  background-color: #1a1a1a;
+  color: white;
+}
+
+.projects-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.project-card {
+  background-color: #2a2a2a;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+    margin-block-end: 2em;
+    padding: .5in;
+  overflow: hidden;
+  text-decoration: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card img {
+  width: 100%;
+  height: auto;
+  border: 1px solid whitesmoke;
+  display: block;
+  margin-block-end: 2em;
+}
+
+.project-info {
+  padding: 1.25rem;
+}
+
+.project-info h3 {
+  font-size: 1.3rem;
+  color: #ffffff;
+  margin-bottom: 0.5rem;
+}
+
+.project-info p {
+  font-size: 1rem;
+  color: #cccccc;
+}
+
+/* Responsive tweaks */
+@media screen and (max-width: 768px) {
+  .projects-page {
+    padding: 5rem 1rem 3rem;
+  }
+
+  .project-info h3 {
+    font-size: 1.1rem;
+  }
+
+  .project-info p {
+    font-size: 0.95rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .project-info h3 {
+    font-size: 1rem;
+  }
+
+  .project-info p {
+    font-size: 0.9rem;
+  }
+}

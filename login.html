@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login - Adeleye Abdulrazaq Temiloluwa</title>
+    <link rel="stylesheet" href="about.css" />
+    <style>
+      body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        background-color: #1a1a1a;
+        color: white;
+        padding: 2rem;
+      }
+
+      .login-container {
+        background-color: #2a2a2a;
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        border-radius: 12px;
+        padding: 2rem;
+        width: 100%;
+        max-width: 400px;
+
+      }
+
+      .login-container h2 {
+        margin-bottom: 1.5rem;
+        text-align: center;
+      }
+
+      .login-container label {
+        display: block;
+        margin-bottom: 0.5rem;
+        font-size: 0.95rem;
+      }
+
+      .login-container input {
+        width: 100%;
+        padding: 0.75rem;
+        margin-bottom: 1.5rem;
+        border-radius: 6px;
+        border: none;
+        background-color: #1f1f1f;
+        color: white;
+      }
+
+      .login-container button {
+        width: 100%;
+        padding: 0.75rem;
+        background-color: #fff;
+        color: black;
+        border: none;
+        border-radius: 6px;
+        font-size: 1rem;
+        cursor: pointer;
+        transition: background-color 0.2s ease;
+      }
+
+      .login-container button:hover {
+        background-color: whitesmoke;
+      }
+
+      .back-home {
+        margin-top: 1rem;
+        text-align: center;
+      }
+
+      .back-home a {
+        color: #aaa;
+        text-decoration: none;
+        font-size: 0.9rem;
+      }
+
+      .back-home a:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <form
+      class="login-container"
+      onsubmit="event.preventDefault(); window.location.href='index.html';"
+    >
+      <h2>Login</h2>
+      <label for="username">Username</label>
+      <input type="text" id="username" name="username" required />
+
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password" required />
+
+      <button type="submit">Login</button>
+
+      <div class="back-home">
+        <a href="index.html">← Back to Home</a>
+      </div>
+    </form>
+  </body>
+</html>

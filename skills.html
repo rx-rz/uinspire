@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Skills - Adeleye Abdulrazaq Temiloluwa</title>
+    <link rel="stylesheet" href="skills.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="nav-brand">
+        <h1>Adeleye Abdulrazaq Temiloluwa</h1>
+      </div>
+      <ul class="nav-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About me</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="login.html">Login</a></li>
+      </ul>
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+
+    <main class="skills-page">
+      <div class="skills-content">
+        <section class="skills-header">
+          <h2 class="page-title">Skills</h2>
+ 
+        </section>
+
+        <div class="skills-grid">
+          <div class="skill-category">
+            <h3 class="category-title">Programming Languages</h3>
+            <div class="skills-list">
+              <div class="skill-item">
+                <span class="skill-name">JavaScript</span>
+                <div class="skill-indicator"></div>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">TypeScript</span>
+                <div class="skill-indicator"></div>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">Golang</span>
+                <div class="skill-indicator"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-category">
+            <h3 class="category-title">Frameworks & Libraries</h3>
+            <div class="skills-list">
+              <div class="skill-item">
+                <span class="skill-name">NextJS</span>
+                <div class="skill-indicator"></div>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">ReactJS</span>
+                <div class="skill-indicator"></div>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">NodeJS</span>
+                <div class="skill-indicator"></div>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">NestJS</span>
+                <div class="skill-indicator"></div>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">Gin</span>
+                <div class="skill-indicator"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-category">
+            <h3 class="category-title">Databases</h3>
+            <div class="skills-list">
+              <div class="skill-item">
+                <span class="skill-name">PostgreSQL</span>
+                <div class="skill-indicator"></div>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">MongoDB</span>
+                <div class="skill-indicator"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-category">
+            <h3 class="category-title">Version Control</h3>
+            <div class="skills-list">
+              <div class="skill-item">
+                <span class="skill-name">Git</span>
+                <div class="skill-indicator"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-category">
+            <h3 class="category-title">DevOps</h3>
+            <div class="skills-list">
+              <div class="skill-item">
+                <span class="skill-name">AWS</span>
+                <div class="skill-indicator"></div>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">Docker</span>
+                <div class="skill-indicator"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script>
+      // Mobile menu toggle
+      const hamburger = document.querySelector(".hamburger");
+      const navMenu = document.querySelector(".nav-menu");
+
+      hamburger.addEventListener("click", () => {
+        hamburger.classList.toggle("active");
+        navMenu.classList.toggle("active");
+      });
+
+      // Close menu when clicking on a link
+      document.querySelectorAll(".nav-menu a").forEach((link) => {
+        link.addEventListener("click", () => {
+          hamburger.classList.remove("active");
+          navMenu.classList.remove("active");
+        });
+      });
+    </script>
+  </body>
+</html>
